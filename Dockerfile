@@ -1,0 +1,6 @@
+FROM openjdk:21
+ENV SPRING_DATASOURCE_URL=$SPRING_DATASOURCE_URL
+ENV SPRING_DATASOURCE_USERNAME=$SPRING_DATASOURCE_USERNAME
+ENV SPRING_DATASOURCE_PASSWORD=$SPRING_DATASOURCE_PASSWORD
+COPY target/purchase-agreement-service-1.0.0.jar purchase-agreement-service-1.0.0.jar
+ENTRYPOINT ["java","-jar","/purchase-agreement-service-1.0.0.jar"]
