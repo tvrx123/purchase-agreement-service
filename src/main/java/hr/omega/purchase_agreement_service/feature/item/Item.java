@@ -6,7 +6,6 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
-// TODO: Implementirati sifrarnik sa soft delete, dutumima početka i kraja važenja šifre
 @Getter
 @Setter
 @Table(name = "ITEMS")

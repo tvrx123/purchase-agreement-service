@@ -46,7 +46,6 @@ public class PurchaseAgreement extends CreationAudit {
   private Set<PurchaseAgreementItem> items;
 
   @AllArgsConstructor
-  // TODO: internacionaliziraj labele
   public enum Status {
     CREATED("KREIRANO"),
     ORDERED("NARUČENO"),

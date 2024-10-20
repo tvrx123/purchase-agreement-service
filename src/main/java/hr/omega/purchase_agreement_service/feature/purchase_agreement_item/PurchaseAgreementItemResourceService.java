@@ -31,7 +31,6 @@ public class PurchaseAgreementItemResourceService {
   }
 
   public PurchaseAgreementItem findById(Long id) {
-    // TODO: dodati custom exception, multijezičnost
     return this.purchaseAgreementItemRepository
         .findById(id)
         .orElseThrow(() -> new ValidationException("purchaseAgreementItem.notExists"));

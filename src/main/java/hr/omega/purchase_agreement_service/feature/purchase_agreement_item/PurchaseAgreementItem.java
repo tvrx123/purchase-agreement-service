@@ -29,8 +29,6 @@ public class PurchaseAgreementItem extends CreationAudit {
   @Column(name = "QUANTITY", nullable = false)
   private Integer quantity;
 
-  // TODO: U primjeru JSON svakog artikla ima poseban status, pošto nije specificirano da se
-  // postavlja kroz api, bit ce isti kao i ugovor, moguće proširenje je svaki artikl posebno
   @Enumerated(EnumType.STRING)
   @Column(name = "STATUS", nullable = false)
   private PurchaseAgreement.Status status;

@@ -21,7 +21,6 @@ public class ItemResourceService {
   }
 
   public Item findById(Long id) {
-    // TODO: dodati custom exception, multijezičnost
     return this.itemRepository
         .findById(id)
         .orElseThrow(() -> new ValidationException("item.notExists"));

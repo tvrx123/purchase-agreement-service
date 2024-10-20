@@ -6,7 +6,6 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import lombok.Data;
 
-// TODO:Postavljat message na sve validacije opcenito -> ValidationMessage.properties
 @Data
 public class PurchaseAgreementItemRequest {
   @NotNull
